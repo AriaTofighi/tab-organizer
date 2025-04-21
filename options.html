@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Options</title></head>
+<head>
+  <meta charset="utf-8">
+  <title>Tab Organizer Options</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
 <body>
   <h2>Tab Organizer Settings</h2>
-  <label>Gemini API Key:<br>
-    <input type="text" id="apiKey" style="width:100%">
-  </label><br><br>
-  <button id="save">Save</button>
-  <span id="status" style="margin-left:10px"></span>
+  
+  <div class="card">
+    <label for="apiKey">Gemini API Key</label>
+    <input type="text" id="apiKey" placeholder="Enter your Gemini API key">
+    <button id="save">Save</button>
+    <span id="status" class="status"></span>
+  </div>
+  
+  <div class="card">
+    <label>Keyboard Shortcut</label>
+    <p class="shortcut-info">
+      Current shortcut: <strong>Alt+O</strong>
+    </p>
+    <p class="shortcut-help">
+      To customize your keyboard shortcut:
+    </p>
+    <ol>
+      <li>Go to <code>chrome://extensions</code> in your browser</li>
+      <li>Click on the menu icon (hamburger menu) in the upper left</li>
+      <li>Select "Keyboard shortcuts" at the bottom</li>
+      <li>Find Tab Organizer in the list and set your preferred shortcut</li>
+    </ol>
+  </div>
+  
+  <div class="footer">
+    Configure Tab Organizer to group your tabs intelligently
+  </div>
+  
   <script src="options.js"></script>
 </body>
 </html>

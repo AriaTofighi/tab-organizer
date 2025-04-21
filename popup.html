@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Tab Organizer</title></head>
-<body style="text-align:center; padding:20px;">
-  <button id="organize">Organize Tabs</button>
+<head>
+  <meta charset="utf-8">
+  <title>Tab Organizer</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <h2>Tab Organizer</h2>
+  
+  <div class="card api-section">
+    <label for="apiKey">Gemini API Key</label>
+    <input type="text" id="apiKey" placeholder="Enter your Gemini API key">
+    <button id="saveKey">Save Key</button>
+    <span id="apiStatus" class="status"></span>
+  </div>
+  
+  <div class="card">
+    <label>Organization Options:</label>
+    <div class="radio-option">
+      <input type="radio" id="newTabsOnly" name="groupOption" value="new" checked>
+      <label for="newTabsOnly">Organize ungrouped tabs only</label>
+    </div>
+    <div class="radio-option">
+      <input type="radio" id="allTabs" name="groupOption" value="all">
+      <label for="allTabs">Reorganize all tabs</label>
+    </div>
+    
+    <div class="button-group">
+      <button id="organize">Organize Tabs</button>
+    </div>
+    
+    <div class="shortcut-note">
+      Keyboard shortcut: <strong>Alt+O</strong>
+      <a class="shortcut-config" href="#" id="configureShortcut">Configure</a>
+    </div>
+  </div>
+  
+  <div class="footer">
+    Powered by Gemini AI
+  </div>
+  
   <script src="popup.js"></script>
 </body>
 </html>

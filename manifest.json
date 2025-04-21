@@ -7,7 +7,8 @@
     "tabs",
     "tabGroups",
     "storage",
-    "notifications"
+    "notifications",
+    "commands"
   ],
   "host_permissions": [
     "https://generativelanguage.googleapis.com/*"
@@ -21,6 +22,14 @@
       "16": "icons/layer.png",
       "48": "icons/layer.png",
       "128": "icons/layer.png"
+    }
+  },
+  "commands": {
+    "organize-tabs": {
+      "suggested_key": {
+        "default": "Alt+O"
+      },
+      "description": "Organize tabs using current settings"
     }
   },
   "options_page": "options.html",
