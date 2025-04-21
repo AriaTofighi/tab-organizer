@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Organizer (Gemini)",
+  "version": "1.0",
+  "description": "Group your Chrome tabs using Gemini 2.0 Flash",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/layer.png",
+      "48": "icons/layer.png",
+      "128": "icons/layer.png"
+    }
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/layer.png",
+    "48": "icons/layer.png",
+    "128": "icons/layer.png"
+  }
+}
